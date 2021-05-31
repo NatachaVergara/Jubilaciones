@@ -1,0 +1,166 @@
+@media screen and (max-width: 645px)
+{/*Comiendo de estilo de la barra de navegacion para tablets y celulares*/
+ nav{
+    width: 100%;
+    background-color: #111;
+    position: 10px;
+    z-index: 3;
+
+ }  
+
+ .logo{
+    padding: 1vh 5vw;
+    color:aliceblue;   
+}
+
+.hamburguesa{
+    display: block;
+    margin: auto;
+    position:absolute;
+    cursor: pointer;
+    right: 6px;
+    top: 4%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+    color:aliceblue;
+}
+.hamburguesa div{
+    background-color: aliceblue;
+}
+
+.navLinks{
+    position:fixed;
+    background: #111;
+    height: 154vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    clip-path: circle(50px at 90% -20%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.navLinks.open{
+    clip-path: circle(1125px at 72% -10%);
+    pointer-events: all;
+}
+
+.open{
+    overflow: hidden;
+}
+
+.navLinks li a{
+    color: aliceblue;
+}
+.navLinks li{
+    opacity: 0;
+    margin: 2rem;
+}
+.navLinks li:nth-child(1){
+    transition:all 0.5s ease 0.2s;
+    margin-top: 300px;
+
+}
+.navLinks li:nth-child(2){
+    transition:all 0.5s ease 0.4s;
+}
+.navLinks li:nth-child(3){
+    transition:all 0.5s ease 0.6s;
+}
+.navLinks li:nth-child(4){
+    transition:all 0.5s ease 0.7s;
+}
+
+
+.nav-links li:nth-child(5) {
+    transition: all 0.5s ease 0.8s;
+}
+.nav-links li:nth-child(6) {
+    transition: all 0.5s ease 0.9s;
+    
+}
+.nav-links li:nth-child(7) {
+    transition: all 0.5s ease 1s;
+    
+}
+
+
+li.fade{
+    opacity: 1;
+}
+/*Animando el Icono de la hamburguesa on click */
+.toggle #linea1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle #linea2{
+    transition: all 0.7s ease;
+    width: 0;
+}
+.toggle #linea3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*Fin de estilo de la barra de navegacion para tablets y celulares*/
+/*Comienzo del diseño principal*/
+
+.contenedor{
+    width: 95%;
+}
+
+h3{
+    font-size: 2rem;
+}
+.parrafo, #infoFinal{
+    font-size: 1.2rem;
+}
+
+legend{
+    font-size: 1.3rem;
+}
+
+label{
+    font-size: 1.3rem;
+}
+
+#infoFinal{
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

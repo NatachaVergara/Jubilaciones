@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/estilosMW600.css">
+    <title>Jubilaciones</title>
+</head>
+
+<body>
+
+    <!--Creo el la barra de navegacion-->
+
+    <nav id="nav" class="navbar">
+        <div class="logo" id="logo">
+            <h1>Jubilaciones-JS</h1>
+        </div>
+        <div class="hamburguesa" id="hamburguesa">
+            <div id="linea1"></div>
+            <div id="linea2"></div>
+            <div id="linea3"></div>
+        </div>
+        <ul class="navLinks">
+            <li id="link1"><a href="https://nvergaraportfolio.netlify.app">Portfolio</a></li>
+            <li id="link2"><a href="https://proyectosdejs.netlify.app">Pequeños proyectos JS</a></li>
+            <li id="link3"><a href="https://mishtmls.netlify.app">Comenzando con HTML</a></li>
+
+        </ul>
+    </nav>
+
+    <!--Fin de la barra de navegacion-->
+    <main>
+    <header>
+        <h1 class="titulo">El sistema de jubilaciones le da la bienvenida</h1>
+    </header>
+    
+        <section class="contenedor informaciom">
+            <h3>Leer atentamente</h3>
+            <p class="parrafo">Le vamos a pedir los siguentes datos para saber si usted puede comenzar con el proceso de
+                jubilación y una vez que la informacion sea revisada, se contactaran con usted para explicarle los pasos
+                a seguir</p>
+        </section>
+
+        <section class="contenedor formulario">
+
+
+            <form action="">
+                <legend>Datos básicos</legend>
+                <label for="nombre">Nombre: </label><br>
+                <input type="text" name="nombre"  id="nombre" required><br><br>
+
+                <label for="apellido">Apellido: </label><br>
+                <input type="text" name="apellido" id="apellido" required><br><br>
+
+                <label for="edad">Edad: </label><br>
+                <input type="text" name="edad" id="edad" required><br><br>
+
+                <label for="aportes">¿Cuántos años de aporte posee? </label><br>
+                <input type="text" name="aportes" id="aportes" required><br><br>
+
+                <label for="genero">Ingrese su género como aparece en su documento: F o M</label><br>
+                <input type="text" name="genero" id="genero" required><br><br>
+            </form>
+
+            <p class="parrafo">ℹ️ Haciendo click en enviar, usted está confirmando que los datos ingresados son válidos,
+                porfavor revise que todo este correcto.</p><br>
+
+            <button type="submit" class="bCalcular" >Enviar consulta</button>
+
+            <p id="infoFinal">Aquí verá reflejada la información</p>
+
+        </section>
+    </main>
+
+
+    <footer>
+        
+        <p>Ejercicio para Programa desde tu casa. Natacha Vergara</p>
+        <span><a href="#logo">Subir</a></span>
+    </footer>
+
+
+
+
+
+
+    <script src="./js/scriptNav.js"></script>
+    <script src="./js/scriptForm.js"></script>
+</body>
+
+</html>
