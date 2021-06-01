@@ -2,7 +2,11 @@
 /**Obtengo los datos de entrada del formulario */
 
 
-
+function error()
+{
+   
+   return
+}
 
 
 
@@ -52,8 +56,34 @@ botonCalcular.addEventListener("click", () => {
 
     }/**Fin del switch */
 
+    
+    let labels = document.querySelectorAll("label");
+    let inputs = document.querySelectorAll("input");
+
+    if(nombre == "" && apellido == "" && edad == "" && aportes == "" || genero == "" )
+    {
+        labels.innerHTML = `Ingrese su nombre`;
+        for (let r = 0; r <labels.length; r++)
+        {
+            labels[r].style.color = "red"
+        }
+        // labels.style.color = "red";
+       for (let i = 0; i <inputs.length; i++)
+       {
+           inputs[i].classList.add("alerta")
+           setTimeout(function(){inputs[i].classList.remove("alerta")},2000);
+       }
+       
+    }
+
    
 }//fin de la funcion
+
+    
+
+
+
+
 
 
 ); /**Fin del proceso */
