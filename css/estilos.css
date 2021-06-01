@@ -4,7 +4,10 @@
 html{scroll-behavior: smooth;}
 /*Comienzo de estilo de la Barra de navegacion*/
 body{
-    background-color:rgb(170, 170, 170);
+   background-image: url("https://cdn.pixabay.com/photo/2020/04/16/11/13/background-5050213_960_720.png");
+    /* background-image: url("https://i.pinimg.com/originals/5d/03/31/5d0331415ed26d803aa27e1b6ae9b3b4.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 nav{
     width:100%;
